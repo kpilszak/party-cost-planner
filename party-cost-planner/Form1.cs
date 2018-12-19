@@ -15,6 +15,7 @@ namespace party_cost_planner
         public Form1()
         {
             InitializeComponent();
+            dinnerParty = new DinnerParty() { NumberOfPeople = 5 };
         }
     }
 }
