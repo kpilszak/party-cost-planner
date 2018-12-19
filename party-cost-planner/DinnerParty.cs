@@ -20,7 +20,13 @@
 
         public void CalculateCostOfDecorations(bool fanciful)
         {
-
+            if (fanciful)
+            {
+                CostOfDecorations = (NumberOfPeople * 15.00M) + 50.00M;
+            } else
+            {
+                CostOfDecorations = (NumberOfPeople * 7.50M) + 30.00M;
+            }
         }
 
         public decimal CalculateCost(bool softOption)
