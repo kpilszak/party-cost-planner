@@ -26,7 +26,7 @@ namespace party_cost_planner
         private void DisplayDinnerPartyCost()
         {
             decimal Cost = dinnerParty.CalculateCost(softBox.Checked);
-            costLabel.Text = Cost.ToString("c");
+            costLabel.Text = Cost.ToString() + " $";
         }
 
         private void fancyBox_CheckedChanged(object sender, EventArgs e)
