@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.fancyBox = new System.Windows.Forms.CheckBox();
+            this.softBox = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -68,27 +68,27 @@
             0,
             0});
             // 
-            // checkBox1
+            // fancyBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(13, 83);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(178, 24);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Fanciful decorations";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.fancyBox.AutoSize = true;
+            this.fancyBox.Checked = true;
+            this.fancyBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.fancyBox.Location = new System.Drawing.Point(13, 83);
+            this.fancyBox.Name = "fancyBox";
+            this.fancyBox.Size = new System.Drawing.Size(178, 24);
+            this.fancyBox.TabIndex = 2;
+            this.fancyBox.Text = "Fanciful decorations";
+            this.fancyBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // softBox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(13, 126);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(143, 24);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Only soft drinks";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.softBox.AutoSize = true;
+            this.softBox.Location = new System.Drawing.Point(13, 126);
+            this.softBox.Name = "softBox";
+            this.softBox.Size = new System.Drawing.Size(143, 24);
+            this.softBox.TabIndex = 3;
+            this.softBox.Text = "Only soft drinks";
+            this.softBox.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -115,8 +115,8 @@
             this.ClientSize = new System.Drawing.Size(205, 217);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.softBox);
+            this.Controls.Add(this.fancyBox);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -131,8 +131,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox fancyBox;
+        private System.Windows.Forms.CheckBox softBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }
