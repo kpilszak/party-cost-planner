@@ -33,7 +33,7 @@
             this.fancyBox = new System.Windows.Forms.CheckBox();
             this.softBox = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.costLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +67,7 @@
             0,
             0,
             0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // fancyBox
             // 
@@ -79,6 +80,7 @@
             this.fancyBox.TabIndex = 2;
             this.fancyBox.Text = "Fanciful decorations";
             this.fancyBox.UseVisualStyleBackColor = true;
+            this.fancyBox.CheckedChanged += new System.EventHandler(this.fancyBox_CheckedChanged);
             // 
             // softBox
             // 
@@ -89,6 +91,7 @@
             this.softBox.TabIndex = 3;
             this.softBox.Text = "Only soft drinks";
             this.softBox.UseVisualStyleBackColor = true;
+            this.softBox.CheckedChanged += new System.EventHandler(this.softBox_CheckedChanged);
             // 
             // label2
             // 
@@ -100,20 +103,20 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Total: ";
             // 
-            // label3
+            // costLabel
             // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(78, 168);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
-            this.label3.TabIndex = 5;
+            this.costLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.costLabel.Location = new System.Drawing.Point(78, 168);
+            this.costLabel.Name = "costLabel";
+            this.costLabel.Size = new System.Drawing.Size(100, 23);
+            this.costLabel.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(205, 217);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.costLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.softBox);
             this.Controls.Add(this.fancyBox);
@@ -134,7 +137,7 @@
         private System.Windows.Forms.CheckBox fancyBox;
         private System.Windows.Forms.CheckBox softBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label costLabel;
     }
 }
 

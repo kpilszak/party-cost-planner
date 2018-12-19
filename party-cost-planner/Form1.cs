@@ -18,7 +18,33 @@ namespace party_cost_planner
         {
             InitializeComponent();
             dinnerParty = new DinnerParty() { NumberOfPeople = 5 };
+            dinnerParty.CalculateCostOfDecorations(false);
+            dinnerParty.SetOnlySoftDrinksOption(true);
+            DisplayDinnerPartyCost();
+        }
 
+        private void DisplayDinnerPartyCost()
+        {
+            decimal Cost = dinnerParty.CalculateCost(softBox.Checked);
+            costLabel.Text = Cost.ToString("c");
+        }
+
+        private void fancyBox_CheckedChanged(object sender, EventArgs e)
+        {
+            dinnerParty.CalculateCostOfDecorations(fancyBox.Checked);
+            DisplayDinnerPartyCost();
+        }
+
+        private void softBox_CheckedChanged(object sender, EventArgs e)
+        {
+            dinnerParty.SetOnlySoftDrinksOption(softBox.Checked);
+            DisplayDinnerPartyCost();
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            dinnerParty.NumberOfPeople = (int)numericUpDown1.Value;
+            DisplayDinnerPartyCost();
         }
     }
 }
