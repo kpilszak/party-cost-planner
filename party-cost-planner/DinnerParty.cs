@@ -3,9 +3,15 @@
     class DinnerParty
     {
         public const int CostOfFoodPerPerson = 25;
-        public int NumberOfPeople;
+        private int numberOfPeople;
         public decimal CostOfBeveragesPerPerson;
         public decimal CostOfDecorations = 0;
+
+        public void SetPartyOptions(int people, bool fanciful)
+        {
+            numberOfPeople = people;
+            CalculateCostOfDecorations(fanciful);
+        }
 
         public void SetOnlySoftDrinksOption(bool softOption)
         {

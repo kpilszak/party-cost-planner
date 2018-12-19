@@ -18,8 +18,8 @@ namespace party_cost_planner
         {
             InitializeComponent();
             dinnerParty = new DinnerParty() { NumberOfPeople = 5 };
-            dinnerParty.CalculateCostOfDecorations(false);
-            dinnerParty.SetOnlySoftDrinksOption(true);
+            dinnerParty.CalculateCostOfDecorations(true);
+            dinnerParty.SetOnlySoftDrinksOption(false);
             DisplayDinnerPartyCost();
         }
 
