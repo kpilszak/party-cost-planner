@@ -9,7 +9,13 @@
 
         public void SetOnlySoftDrinksOption(bool softOption)
         {
-            
+            if (softOption)
+            {
+                CostOfBeveragesPerPerson = 5.00M;
+            } else
+            {
+                CostOfBeveragesPerPerson = 20.00M;
+            }
         }
 
         public void CalculateCostOfDecorations(bool fanciful)
