@@ -19,7 +19,14 @@
 
         public decimal CalculateCost(bool softOption)
         {
-
+            decimal totalCost = CostOfDecorations + ((CostOfFoodPerPerson + CostOfBeveragesPerPerson) * NumberOfPeople);
+            if (softOption)
+            {
+                return totalCost * .95M;
+            } else
+            {
+                return totalCost;
+            }
         }
     }
 }
