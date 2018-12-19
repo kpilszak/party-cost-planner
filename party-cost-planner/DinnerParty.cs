@@ -13,6 +13,11 @@
             CalculateCostOfDecorations(fanciful);
         }
 
+        public int GetNumberOfPeople()
+        {
+            return numberOfPeople;
+        }
+
         public void SetOnlySoftDrinksOption(bool softOption)
         {
             if (softOption)
