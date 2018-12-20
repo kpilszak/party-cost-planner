@@ -1,0 +1,10 @@
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\party-cost-planner\party-cost-planner\bin\Debug\party-cost-planner.exe.config
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\party-cost-planner\party-cost-planner\bin\Debug\party-cost-planner.exe
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\party-cost-planner\party-cost-planner\bin\Debug\party-cost-planner.pdb
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\party-cost-planner\party-cost-planner\obj\Debug\party-cost-planner.csprojAssemblyReference.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\party-cost-planner\party-cost-planner\obj\Debug\party_cost_planner.Form1.resources
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\party-cost-planner\party-cost-planner\obj\Debug\party_cost_planner.Properties.Resources.resources
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\party-cost-planner\party-cost-planner\obj\Debug\party-cost-planner.csproj.GenerateResource.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\party-cost-planner\party-cost-planner\obj\Debug\party-cost-planner.csproj.CoreCompileInputs.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\party-cost-planner\party-cost-planner\obj\Debug\party-cost-planner.exe
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\party-cost-planner\party-cost-planner\obj\Debug\party-cost-planner.pdb
