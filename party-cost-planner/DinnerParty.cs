@@ -3,51 +3,55 @@
     class DinnerParty
     {
         public const int CostOfFoodPerPerson = 25;
-        private int numberOfPeople;
-        public decimal CostOfBeveragesPerPerson;
-        public decimal CostOfDecorations = 0;
-
-        public void SetPartyOptions(int people, bool fanciful)
+        public int NumberOfPeople { get; set; }
+        public bool OnlySoftDrinksOption { get; set; }
+        public bool FancifulDecorations { get; set; }
+                
+        public DinnerParty(int numberOfPeople, bool onlySoftDrinksOption, bool fancifulDecorations)
         {
-            numberOfPeople = people;
-            CalculateCostOfDecorations(fanciful);
+            NumberOfPeople = numberOfPeople;
+            OnlySoftDrinksOption = onlySoftDrinksOption;
+            FancifulDecorations = fancifulDecorations;
         }
 
-        public int GetNumberOfPeople()
+        private decimal CalculateCostOfDecorations()
         {
-            return numberOfPeople;
-        }
-
-        public void SetOnlySoftDrinksOption(bool softOption)
-        {
-            if (softOption)
+            decimal costOfDecorations;
+            if (FancifulDecorations)
             {
-                CostOfBeveragesPerPerson = 5.00M;
-            } else
-            {
-                CostOfBeveragesPerPerson = 20.00M;
+                costOfDecorations = (NumberOfPeople * 15.00M) + 50.00M;
             }
-        }
-
-        public void CalculateCostOfDecorations(bool fanciful)
-        {
-            if (fanciful)
+            else
             {
-                CostOfDecorations = (NumberOfPeople * 15.00M) + 50.00M;
-            } else
-            {
-                CostOfDecorations = (NumberOfPeople * 7.50M) + 30.00M;
+                costOfDecorations = (NumberOfPeople * 7.50M) + 30.00M;
             }
+            return costOfDecorations;
         }
 
-        public decimal CalculateCost(bool softOption)
+        private decimal CalculateCostOfBeveragesPerPerson()
         {
-            decimal totalCost = CostOfDecorations + ((CostOfFoodPerPerson + CostOfBeveragesPerPerson) * NumberOfPeople);
-            if (softOption)
+            decimal costOfBeveragesPerPerson;
+            if (OnlySoftDrinksOption)
             {
-                return totalCost * .95M;
-            } else
+                costOfBeveragesPerPerson = 5.00M;
+            }
+            else
             {
+                costOfBeveragesPerPerson = 20.00M;
+            }
+            return costOfBeveragesPerPerson;
+        }
+
+        public decimal Cost
+        {
+            get
+            {
+                decimal totalCost = CalculateCostOfDecorations();
+                totalCost += ((CalculateCostOfBeveragesPerPerson() + CostOfFoodPerPerson) * NumberOfPeople);
+                if (OnlySoftDrinksOption)
+                {
+                    totalCost *= .95M;
+                }
                 return totalCost;
             }
         }
