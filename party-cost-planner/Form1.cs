@@ -17,27 +17,25 @@ namespace party_cost_planner
         public Form1()
         {
             InitializeComponent();
-            dinnerParty = new DinnerParty() { NumberOfPeople = 5 };
-            dinnerParty.CalculateCostOfDecorations(true);
-            dinnerParty.SetOnlySoftDrinksOption(false);
+            dinnerParty = new DinnerParty((int)numericUpDown1.Value, softBox.Checked, fancyBox.Checked);
             DisplayDinnerPartyCost();
         }
 
         private void DisplayDinnerPartyCost()
         {
-            decimal Cost = dinnerParty.CalculateCost(softBox.Checked);
+            decimal Cost = dinnerParty.Cost;
             costLabel.Text = Cost.ToString() + " $";
         }
 
         private void fancyBox_CheckedChanged(object sender, EventArgs e)
         {
-            dinnerParty.CalculateCostOfDecorations(fancyBox.Checked);
+            dinnerParty.FancifulDecorations = fancyBox.Checked;
             DisplayDinnerPartyCost();
         }
 
         private void softBox_CheckedChanged(object sender, EventArgs e)
         {
-            dinnerParty.SetOnlySoftDrinksOption(softBox.Checked);
+            dinnerParty.OnlySoftDrinksOption = softBox.Checked;
             DisplayDinnerPartyCost();
         }
 
