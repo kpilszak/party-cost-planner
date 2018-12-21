@@ -19,11 +19,11 @@
             decimal costOfDecorations;
             if (FancifulDecorations)
             {
-                costOfDecorations = (NumberOfPeople * 15.00M) + 50.00M;
+                costOfDecorations = (NumberOfPeople * 15.00M) + 50M;
             }
             else
             {
-                costOfDecorations = (NumberOfPeople * 7.50M) + 30.00M;
+                costOfDecorations = (NumberOfPeople * 7.50M) + 30M;
             }
             return costOfDecorations;
         }
