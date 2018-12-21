@@ -29,7 +29,7 @@
         {
             get
             {
-                decimal totalCost = base.Cost;
+                decimal totalCost = base.Cost; 
                 totalCost += CalculateCostOfBeveragesPerPerson() * NumberOfPeople;
                 if (OnlySoftDrinksOption)
                 {
