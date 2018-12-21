@@ -13,6 +13,7 @@ namespace party_cost_planner
     public partial class Form1 : Form
     {
         DinnerParty dinnerParty;
+        BirthdayParty birthdayParty;
 
         public Form1()
         {
