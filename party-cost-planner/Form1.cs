@@ -30,6 +30,13 @@ namespace party_cost_planner
             costLabel.Text = Cost.ToString() + " $";
         }
 
+        private void DisplayBirthdayPartyCost()
+        {
+            tooLongLabel.Visible = birthdayParty.CakeWritingTooLong;
+            decimal cost = birthdayParty.Cost;
+            birthdayCost.Text = cost.ToString() + " $";
+        }
+
         private void fancyBox_CheckedChanged(object sender, EventArgs e)
         {
             dinnerParty.FancifulDecorations = fancyBox.Checked;
@@ -46,6 +53,24 @@ namespace party_cost_planner
         {
             dinnerParty.NumberOfPeople = (int)numericUpDown1.Value;
             DisplayDinnerPartyCost();
+        }
+
+        private void numberGuestsBirthday_ValueChanged(object sender, EventArgs e)
+        {
+            birthdayParty.NumberOfPeople = (int)numberGuestsBirthday.Value;
+            DisplayBirthdayPartyCost();
+        }
+
+        private void fancifulBirthday_CheckedChanged(object sender, EventArgs e)
+        {
+            birthdayParty.FancifulDecorations = fancifulBirthday.Checked;
+            DisplayBirthdayPartyCost();
+        }
+
+        private void cakeWriting_TextChanged(object sender, EventArgs e)
+        {
+            birthdayParty.CakeWriting = cakeWriting.Text;
+            DisplayBirthdayPartyCost();
         }
     }
 }

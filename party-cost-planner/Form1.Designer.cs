@@ -200,6 +200,7 @@
             0,
             0,
             0});
+            this.numberGuestsBirthday.ValueChanged += new System.EventHandler(this.numberGuestsBirthday_ValueChanged);
             // 
             // fancifulBirthday
             // 
@@ -212,6 +213,7 @@
             this.fancifulBirthday.TabIndex = 4;
             this.fancifulBirthday.Text = "Fanciful decorations";
             this.fancifulBirthday.UseVisualStyleBackColor = true;
+            this.fancifulBirthday.CheckedChanged += new System.EventHandler(this.fancifulBirthday_CheckedChanged);
             // 
             // label4
             // 
@@ -247,6 +249,7 @@
             this.cakeWriting.Size = new System.Drawing.Size(216, 26);
             this.cakeWriting.TabIndex = 9;
             this.cakeWriting.Text = "Happy Birthday!";
+            this.cakeWriting.TextChanged += new System.EventHandler(this.cakeWriting_TextChanged);
             // 
             // tooLongLabel
             // 
