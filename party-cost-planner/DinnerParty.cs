@@ -1,6 +1,6 @@
 ﻿namespace party_cost_planner
 {
-    class DinnerParty
+    class DinnerParty : Party
     {
         public const int CostOfFoodPerPerson = 25;
         public int NumberOfPeople { get; set; }
