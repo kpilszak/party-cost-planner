@@ -2,9 +2,6 @@
 {
     class BirthdayParty : Party
     {
-        public const int CostOfFoodPerPerson = 25;
-        public int NumberOfPeople { get; set; }
-        public bool FancifulDecorations { get; set; }
         public string CakeWriting { get; set; }
 
         public BirthdayParty(int numberOfPeople, bool fancifulDecorations, string cakeWriting)
@@ -52,22 +49,11 @@
             }
         }
 
-        private decimal CalculateCostOfDecorations()
-        {
-            decimal costOfDecorations;
-            if (FancifulDecorations)
-                costOfDecorations = (NumberOfPeople * 15.00M) + 50M;
-            else
-                costOfDecorations = (NumberOfPeople * 7.50M) + 30M;            
-            return costOfDecorations;
-        }
-
-        public decimal Cost
+        override public decimal Cost
         {
             get
             {
-                decimal totalCost = CalculateCostOfDecorations();
-                totalCost += CostOfFoodPerPerson * NumberOfPeople;
+                decimal totalCost = base.Cost;
                 decimal cakeCost;
                 if (CakeSize() == 20)
                     cakeCost = 40M + ActualLength * .25M;
