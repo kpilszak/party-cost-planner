@@ -43,7 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.birthdayCost = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textWriting = new System.Windows.Forms.TextBox();
+            this.cakeWriting = new System.Windows.Forms.TextBox();
             this.tooLongLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -155,7 +155,7 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tooLongLabel);
-            this.tabPage2.Controls.Add(this.textWriting);
+            this.tabPage2.Controls.Add(this.cakeWriting);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.birthdayCost);
@@ -240,13 +240,13 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Cake inscription";
             // 
-            // textWriting
+            // cakeWriting
             // 
-            this.textWriting.Location = new System.Drawing.Point(10, 147);
-            this.textWriting.Name = "textWriting";
-            this.textWriting.Size = new System.Drawing.Size(216, 26);
-            this.textWriting.TabIndex = 9;
-            this.textWriting.Text = "Happy Birthday!";
+            this.cakeWriting.Location = new System.Drawing.Point(10, 147);
+            this.cakeWriting.Name = "cakeWriting";
+            this.cakeWriting.Size = new System.Drawing.Size(216, 26);
+            this.cakeWriting.TabIndex = 9;
+            this.cakeWriting.Text = "Happy Birthday!";
             // 
             // tooLongLabel
             // 
@@ -294,7 +294,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numberGuestsBirthday;
         private System.Windows.Forms.Label tooLongLabel;
-        private System.Windows.Forms.TextBox textWriting;
+        private System.Windows.Forms.TextBox cakeWriting;
         private System.Windows.Forms.Label label5;
     }
 }

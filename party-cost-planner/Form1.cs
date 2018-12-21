@@ -20,6 +20,8 @@ namespace party_cost_planner
             InitializeComponent();
             dinnerParty = new DinnerParty((int)numericUpDown1.Value, softBox.Checked, fancyBox.Checked);
             DisplayDinnerPartyCost();
+            birthdayParty = new BirthdayParty((int)numberGuestsBirthday.Value, fancifulBirthday.Checked, cakeWriting.Text);
+            DisplayBirthdayPartyCost();
         }
 
         private void DisplayDinnerPartyCost()
