@@ -11,6 +11,7 @@ The main purpose is to plan costs of party.
 There are two kinds of parties you can choose from: occasional event or birthday party.  
 The costs of occasional event depend on guests number, sort of drinks and decorations.  
 While the costs of birthday party depend on guests number, decorations, size of a cake and length of the cake's inscription. On birthday party there is not only soft drinks opion.  
+  
 The rules of fee amount are as follow:
 * 25$ per person
 * 100$ additional fee if the guests number exceedes 12 persons
